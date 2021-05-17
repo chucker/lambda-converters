@@ -4,7 +4,18 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>9.0</LangVersion>
     <Nullable>enable</Nullable>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageVersion>4.0.0-alpha1</PackageVersion>
+    <Authors>Michael Damatov, Dimitri Enns, Alex Helms, Sören Kuklau</Authors>
+    <Description>The library allows to create IValueConverter using lambda expressions.
+
+This is an adaption of the LambdaConverters package for Xamarin Forms.</Description>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE" Pack="True" PackagePath="" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
